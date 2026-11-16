@@ -1,0 +1,143 @@
+{
+  "name": "box_fit_planner",
+  "org": "com.alinxs.apps",
+  "title": "Box Fit Planner",
+  "description": "Compare every axis-aligned orientation to see how many identical rectangular items fit in a box.",
+  "korean_summary": "직육면체 상자와 동일한 물품의 치수를 입력하면 가능한 축 정렬 방향을 비교해 행·열·층별 개수와 총수량, 남는 공간을 보여 주는 오프라인 도구입니다. 입력값은 기기 밖으로 전송하거나 서버에 저장하지 않으며, 작업을 가리지 않는 표준 크기 AdMob 배너 하나만 표시합니다.",
+  "design_system": {
+    "style": "minimal_material",
+    "seed_color": "#356859",
+    "theme_mode": "system",
+    "density": "compact",
+    "corner_style": "medium",
+    "motion": "subtle"
+  },
+  "icon": {
+    "background": "#356859",
+    "composition": "centered_safe_zone",
+    "version": 1,
+    "secondary": "stacked_boxes",
+    "primary": "generic_utility",
+    "foreground": "#FFFFFF",
+    "source": null
+  },
+  "requirements": "Build a compact English-first Flutter Android utility whose first phone viewport explains that it checks how many identical rectangular items fit in a rectangular box and shows the first box-dimension input and one obvious Calculate fit action above the footer and banner. Provide a unit selector for millimetres, centimetres, inches, or a unitless mode, followed by positive decimal inputs labeled Box length, Box width, Box height, Item length, Item width, and Item height. Use one selected unit consistently; never convert values or mix units. On Calculate fit, evaluate every distinct axis-aligned item orientation in this fixed order: length-width-height, length-height-width, width-length-height, width-height-length, height-length-width, and height-width-length, skipping duplicate dimension triples. For each orientation, floor-divide each box dimension by its corresponding oriented item dimension, multiply the three integer counts, and show the orientation, Across length, Across width, Layers, Total items, and unused length, width, and height. Rank orientations by descending Total items and retain the fixed evaluation order for ties; identify the first result as Best fit. Show only whole nonnegative counts and format unused measurements with up to three decimal places without changing the calculation. State clearly that the result assumes rigid rectangular items arranged in a simple aligned grid with no rotation away from 90 degrees, compression, nesting, dividers, padding, wall thickness, load limits, or mixed item sizes, and that users must enter usable internal box dimensions. If any item dimension exceeds its corresponding box dimension for an orientation, show zero for that axis and Total items: 0; if all orientations total zero, show Nothing fits with the entered dimensions. Reject blank, zero, negative, nonnumeric, non-finite, and values with more than three decimal places using localized inline errors while preserving the last valid result. Limit each numeric value to 1000000000. Provide Reset as a secondary action and do not retain calculation history. Do not estimate weight, strength, shipping cost, real-world tolerances, diagonal placement, or non-grid packing. Do not request storage, file, media, contacts, location, camera, microphone, notification, accessibility-service, or other sensitive permissions. Keep all dimensions and results on-device for the current session, require no account or backend, and allow networking only for the existing Google Mobile Ads AdMob SDK. Preserve the generated design system and buildAppTheme integration. Provide complete ARB translations without English substitutions for en, ko, ja, zh_Hans, zh_Hant, es, fr, de, pt_BR, it, nl, ru, ar, hi, id, and vi, including RTL-safe Arabic layout. Put an immediately usable compact AppBar language menu showing the current locale code and a chevron on the first screen. Put the session-only AppAppearanceMenu immediately to the left of the in-app privacy-policy action in a bottom-centered footer directly above exactly one non-intrusive standard AdSize.banner, exposing only minimal_material, flat, and soft. The banner must never cover or displace the purpose, dimension inputs, primary action, validation, results, assumptions, or footer. Deterministic widget tests must verify that a 100 by 60 by 40 box and a 30 by 20 by 10 item select the 20 by 30 by 10 orientation as Best fit with Across length: 5, Across width: 2, Layers: 4, Total items: 40, and unused dimensions 0, 0, and 0; that equal dimensions produce one distinct orientation and Total items: 1; that duplicate permutations are skipped; that an oversized item produces Nothing fits with the entered dimensions; that blank, zero, negative, nonnumeric, non-finite, over-precision, and over-limit values show localized validation while preserving the last valid result; and that switching from English to Arabic translates labels, applies RTL layout without clipping, and preserves all entered dimensions and results.",
+  "planning": {
+    "source": "codex",
+    "priority": 0,
+    "launch_scope": "global",
+    "problem": "Adults packing, storing, or displaying repeated rectangular items need a quick way to compare 90-degree orientations and determine the capacity of a simple aligned box layout.",
+    "audience": "Adult global users planning simple storage, packaging, shelf bins, or display boxes from measurements they already have.",
+    "differentiator": "Unlike the portfolio's weight balancing and one-dimensional cut planning tools, this utility evaluates distinct three-dimensional item orientations and reports per-axis counts and unused space for a transparent aligned-grid fit.",
+    "monetization": "One standard-size AdMob banner remains below the bottom-centered appearance and privacy footer and never covers dimensions, validation, assumptions, orientation results, or the primary action.",
+    "privacy": "No account, backend, server-side input storage, history, or sensitive permissions; dimensions and calculated results remain on device for the current session, with AdMob advertising disclosed separately.",
+    "test_scenarios": "Widget tests cover the exact 100 by 60 by 40 box example, deterministic orientation ranking and tie handling, duplicate-orientation removal, equal dimensions, a fully oversized item, numeric validation with last-result preservation, English-to-Arabic switching, and RTL layout without clipping."
+  },
+  "deployment": {
+    "play": {
+      "default_language": "en-US",
+      "app_type": "app",
+      "pricing": "free"
+    },
+    "content": {
+      "contains_ads": true,
+      "target_audience": "adults",
+      "user_generated_content": false
+    },
+    "data_safety": {
+      "account_required": false,
+      "app_inputs_server_stored": false,
+      "third_party_sdks": [
+        "admob"
+      ]
+    },
+    "release": {
+      "launch_scope": "global",
+      "internal_test": true,
+      "production_approval_required": true,
+      "initial_production_rollout": 1.0
+    },
+    "admob_secret": "box_fit_planner_admob",
+    "category": "Tools"
+  },
+  "store_screenshots": [
+    {
+      "id": "phone-01",
+      "description": "Clean initial state with the box and item dimension sections and primary calculation action visible.",
+      "actions": [],
+      "expected_texts": [
+        "Box Fit Planner",
+        "Box dimensions",
+        "Box length",
+        "Item dimensions",
+        "Calculate fit"
+      ],
+      "forbidden_texts": [
+        "System UI isn't responding",
+        "isn't responding",
+        "DEBUG",
+        "has stopped"
+      ]
+    },
+    {
+      "id": "phone-02",
+      "description": "Calculate the best aligned-grid orientation for identical items inside a rectangular box.",
+      "actions": [
+        {
+          "type": "input",
+          "target": "Box length",
+          "text": "100"
+        },
+        {
+          "type": "input",
+          "target": "Box width",
+          "text": "60"
+        },
+        {
+          "type": "input",
+          "target": "Box height",
+          "text": "40"
+        },
+        {
+          "type": "input",
+          "target": "Item length",
+          "text": "30"
+        },
+        {
+          "type": "input",
+          "target": "Item width",
+          "text": "20"
+        },
+        {
+          "type": "input",
+          "target": "Item height",
+          "text": "10"
+        },
+        {
+          "type": "tap",
+          "target": "Calculate fit"
+        },
+        {
+          "type": "wait",
+          "seconds": 2
+        }
+      ],
+      "expected_texts": [
+        "Best fit",
+        "20 × 30 × 10",
+        "Across length: 5",
+        "Across width: 2",
+        "Layers: 4",
+        "Total items: 40"
+      ],
+      "forbidden_texts": [
+        "Nothing fits with the entered dimensions",
+        "Enter a positive number",
+        "System UI isn't responding",
+        "isn't responding",
+        "DEBUG",
+        "has stopped"
+      ]
+    }
+  ]
+}

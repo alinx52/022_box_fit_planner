@@ -1,0 +1,13 @@
+{
+  "appTitle": "Box Fit Planner",
+  "@appTitle": {
+    "description": "The app title shown in the system UI."
+  },
+  "appDescription": "Compare every axis-aligned orientation to see how many identical rectangular items fit in a box.",
+  "@appDescription": {
+    "description": "The short description shown on the home page."
+  },
+  "languageEnglish": "English",
+  "languageKorean": "한국어",
+  "privacyPolicy": "Privacy policy"
+}
