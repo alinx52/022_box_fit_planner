@@ -378,6 +378,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Uses usable internal box dimensions and rigid, identical rectangular items in a simple aligned grid. It does not allow angled rotation, compression, nesting, dividers, padding, wall thickness, load limits, or mixed item sizes.'**
   String get assumptions;
+
+  /// No description provided for @helpTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Help & Guide'**
+  String get helpTooltip;
+
+  /// No description provided for @helpTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Box Fit Planner Guide'**
+  String get helpTitle;
+
+  /// No description provided for @helpProblemSolvedTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Problem Solved'**
+  String get helpProblemSolvedTitle;
+
+  /// No description provided for @helpProblemSolvedContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Determines how many identical rectangular items fit into an outer rectangular container across orthogonal orientations and calculates leftover volume offline.'**
+  String get helpProblemSolvedContent;
+
+  /// No description provided for @helpHowToUseTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'How to Use'**
+  String get helpHowToUseTitle;
+
+  /// No description provided for @helpHowToUseContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter outer box dimensions (length, width, height) and single item dimensions (length, width, height), then tap Calculate fit.'**
+  String get helpHowToUseContent;
+
+  /// No description provided for @helpReadingResultsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading Results'**
+  String get helpReadingResultsTitle;
+
+  /// No description provided for @helpReadingResultsContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Displays total items accommodated, items per axis (length × width × height), volume utilization percentage (%), and leftover container space.'**
+  String get helpReadingResultsContent;
+
+  /// No description provided for @helpExampleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Example'**
+  String get helpExampleTitle;
+
+  /// No description provided for @helpExampleContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Box: 30 x 20 x 10 cm | Item: 10 x 10 x 5 cm\nResult: 3 length x 2 width x 2 height = 12 items total (100% volume used, 0 cm leftover).'**
+  String get helpExampleContent;
+
+  /// No description provided for @helpLimitsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Validation & Limitations'**
+  String get helpLimitsTitle;
+
+  /// No description provided for @helpLimitsContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Geometric orthogonal packing calculation. Does not account for weight limits, fragility, deformation, padding, or complex mixed-orientation nesting.'**
+  String get helpLimitsContent;
+
+  /// No description provided for @helpDataAndPrivacyTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Local Data & Ads'**
+  String get helpDataAndPrivacyTitle;
+
+  /// No description provided for @helpDataAndPrivacyContent.
+  ///
+  /// In en, this message translates to:
+  /// **'All dimensions are computed strictly on-device without internet transmission. A standard AdMob banner is displayed below.'**
+  String get helpDataAndPrivacyContent;
 }
 
 class _AppLocalizationsDelegate

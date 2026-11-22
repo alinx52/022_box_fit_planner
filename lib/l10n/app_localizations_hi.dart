@@ -150,4 +150,52 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get assumptions =>
       'बॉक्स के उपयोग योग्य अंदरूनी माप और सरल संरेखित ग्रिड में रखे एक जैसे कठोर आयताकार सामान माने जाते हैं। तिरछा घुमाव, दबाव, एक-दूसरे में रखना, विभाजक, पैडिंग, दीवार की मोटाई, भार सीमा या अलग-अलग आकार शामिल नहीं हैं।';
+
+  @override
+  String get helpTooltip => 'सहायता और मार्गदर्शिका';
+
+  @override
+  String get helpTitle => 'बॉक्स फिट प्लानर मार्गदर्शिका';
+
+  @override
+  String get helpProblemSolvedTitle => 'समस्या का समाधान';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'निर्धारित करता है कि विभिन्न दिशाओं में एक बाहरी कंटेनर में कितने समान आयताकार सामान फिट होते हैं और बचे हुए स्थान की गणना करता है।';
+
+  @override
+  String get helpHowToUseTitle => 'उपयोग कैसे करें';
+
+  @override
+  String get helpHowToUseContent =>
+      'बाहरी बॉक्स आयाम (लंबाई, चौड़ाई, ऊंचाई) और वस्तु आयाम दर्ज करें, फिर गणना करें दबाएं।';
+
+  @override
+  String get helpReadingResultsTitle => 'परिणाम कैसे समझें';
+
+  @override
+  String get helpReadingResultsContent =>
+      'समायोजित कुल वस्तुएं, प्रति अक्ष वितरण (लंबाई × चौड़ाई × ऊंचाई), मात्रा उपयोग प्रतिशत (%) और बचा हुआ स्थान दिखाता है।';
+
+  @override
+  String get helpExampleTitle => 'उदाहरण';
+
+  @override
+  String get helpExampleContent =>
+      'बॉक्स: 30 x 20 x 10 सेमी | वस्तु: 10 x 10 x 5 सेमी\nपरिणाम: 3 लंबाई x 2 चौड़ाई x 2 ऊंचाई = कुल 12 वस्तुएं (100% आयतन प्रयुक्त)।';
+
+  @override
+  String get helpLimitsTitle => 'सत्यापन और सीमाएं';
+
+  @override
+  String get helpLimitsContent =>
+      'ज्यामितीय पैकिंग गणना। वजन सीमा, नाजुकता, कुशनिंग सामग्री या विरूपण को ध्यान में नहीं रखता है।';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'स्थानीय डेटा और विज्ञापन';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'सभी गणनाएँ बिना इंटरनेट के डिवाइस पर की जाती हैं। नीचे एक मानक AdMob बैनर दिखाया गया है।';
 }

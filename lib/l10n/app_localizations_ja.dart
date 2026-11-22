@@ -149,4 +149,52 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get assumptions =>
       '使用可能な箱の内寸と、硬く同一の直方体品を単純な整列格子で配置する前提です。斜めの回転、圧縮、入れ子、仕切り、緩衝材、壁厚、荷重制限、異なる品物サイズは考慮しません。';
+
+  @override
+  String get helpTooltip => 'ヘルプと使い方';
+
+  @override
+  String get helpTitle => '箱詰め・収納プランナーガイド';
+
+  @override
+  String get helpProblemSolvedTitle => '解決する課題';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '直方体の外箱に同じ大きさの物品を詰める際、向き（回転）ごとの最大収納数、縦・横・高さの配置数、および余り空間を計算します。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent =>
+      '外箱の寸法（縦、横、高さ）と物品1つの寸法（縦、横、高さ）を入力し、「収納計算」をタップします。';
+
+  @override
+  String get helpReadingResultsTitle => '結果の見方';
+
+  @override
+  String get helpReadingResultsContent =>
+      '総収納数、各軸ごとの配置数（縦 × 横 × 高さ）、容積利用率（%）、および箱内の余剰空間が表示されます。';
+
+  @override
+  String get helpExampleTitle => '具体例';
+
+  @override
+  String get helpExampleContent =>
+      '箱: 30 x 20 x 10 cm | 物品: 10 x 10 x 5 cm\n結果: 縦3個 x 横2個 x 高さ2個 = 合計12個収納 (容積利用率 100%、余剰 0 cm)。';
+
+  @override
+  String get helpLimitsTitle => '検証と制限事項';
+
+  @override
+  String get helpLimitsContent =>
+      '直交配置に基づく幾何学的計算です。耐荷重制限、緩衝材の厚み、変形、不規則な混載配置を保証するものではありません。';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'ローカルデータと広告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'すべての計算はインターネット通信なしで端末内で行われます。画面下部に標準AdMobバナーが表示されます。';
 }

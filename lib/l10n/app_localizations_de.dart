@@ -150,4 +150,52 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get assumptions =>
       'Verwendet nutzbare Innenmaße und starre, gleiche quaderförmige Gegenstände in einem einfachen ausgerichteten Raster. Schräge Drehung, Kompression, Verschachtelung, Trennwände, Polsterung, Wandstärke, Belastungsgrenzen und gemischte Größen werden nicht berücksichtigt.';
+
+  @override
+  String get helpTooltip => 'Hilfe & Anleitung';
+
+  @override
+  String get helpTitle => 'Karton-Packplaner-Leitfaden';
+
+  @override
+  String get helpProblemSolvedTitle => 'Gelöstes Problem';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Berechnet offline, wie viele quaderförmige Gegenstände in einen Behälter passen, inklusive Ausrichtung und Restvolumen.';
+
+  @override
+  String get helpHowToUseTitle => 'Bedienung';
+
+  @override
+  String get helpHowToUseContent =>
+      'Geben Sie Außenmaße (L, B, H) und Artikelmaße (L, B, H) ein und tippen Sie auf Berechnung starten.';
+
+  @override
+  String get helpReadingResultsTitle => 'Ergebnisse verstehen';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Zeigt Gesamtanzahl der Gegenstände, Verteilung pro Achse (L × B × H), Volumenausnutzung (%) und verbleibenden Raum.';
+
+  @override
+  String get helpExampleTitle => 'Beispiel';
+
+  @override
+  String get helpExampleContent =>
+      'Karton: 30 x 20 x 10 cm | Artikel: 10 x 10 x 5 cm\nErgebnis: 3 Länge x 2 Breite x 2 Höhe = 12 Artikel (100% Volumen, 0 cm Rest).';
+
+  @override
+  String get helpLimitsTitle => 'Validierung & Grenzen';
+
+  @override
+  String get helpLimitsContent =>
+      'Reine geometrische orthogonale Packberechnung. Berücksichtigt kein Maximalgewicht, Polstermaterial oder Verformungen.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Lokale Daten & Werbung';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Alle Maße werden ohne Internetverbindung auf dem Gerät berechnet. Unten wird ein standardmäßiges AdMob-Banner angezeigt.';
 }

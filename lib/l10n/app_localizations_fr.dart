@@ -150,4 +150,52 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get assumptions =>
       'Utilise les dimensions intérieures utiles et des articles rectangulaires rigides identiques disposés sur une grille alignée simple. La rotation oblique, la compression, l’emboîtement, les séparateurs, le rembourrage, l’épaisseur des parois, les limites de charge et les tailles mixtes ne sont pas pris en compte.';
+
+  @override
+  String get helpTooltip => 'Aide et guide';
+
+  @override
+  String get helpTitle => 'Guide du planificateur de rangement en boîte';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problème résolu';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Détermine combien d\'objets rectangulaires identiques rentrent dans un conteneur selon les orientations et calcule le volume restant.';
+
+  @override
+  String get helpHowToUseTitle => 'Mode d\'emploi';
+
+  @override
+  String get helpHowToUseContent =>
+      'Saisissez les dimensions de la boîte (L, l, H) et celles de l\'objet individuel (L, l, H), puis appuyez sur Calculer.';
+
+  @override
+  String get helpReadingResultsTitle => 'Lecture des résultats';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Affiche le total d\'objets, la répartition par axe (L × l × H), le pourcentage d\'utilisation du volume (%) et l\'espace restant.';
+
+  @override
+  String get helpExampleTitle => 'Exemple';
+
+  @override
+  String get helpExampleContent =>
+      'Boîte : 30 x 20 x 10 cm | Objet : 10 x 10 x 5 cm\nRésultat : 3 (L) x 2 (l) x 2 (H) = 12 objets au total (100% de volume, 0 cm restant).';
+
+  @override
+  String get helpLimitsTitle => 'Validations et limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Calcul géométrique orthogonal simple. Ne prend pas en compte le poids maximal, la fragilité ou les calages de protection.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Données locales et publicités';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tous les calculs sont effectués localement sur l\'appareil sans internet. Une bannière standard AdMob est affichée en bas.';
 }

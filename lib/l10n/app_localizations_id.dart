@@ -150,4 +150,52 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get assumptions =>
       'Menggunakan dimensi dalam kotak yang dapat dipakai dan barang persegi panjang kaku yang identik dalam kisi sejajar sederhana. Tidak mencakup rotasi miring, pemampatan, penyarangan, sekat, bantalan, ketebalan dinding, batas beban, atau ukuran barang campuran.';
+
+  @override
+  String get helpTooltip => 'Bantuan & Panduan';
+
+  @override
+  String get helpTitle => 'Panduan Perencana Muatan Kotak';
+
+  @override
+  String get helpProblemSolvedTitle => 'Masalah yang Diatasi';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Menentukan berapa banyak barang persegi panjang yang muat ke dalam kotak dalam berbagai orientasi serta menghitung sisa ruang.';
+
+  @override
+  String get helpHowToUseTitle => 'Cara Penggunaan';
+
+  @override
+  String get helpHowToUseContent =>
+      'Masukkan dimensi kotak luar (panjang, lebar, tinggi) dan dimensi barang tunggal, lalu ketuk Hitung muatan.';
+
+  @override
+  String get helpReadingResultsTitle => 'Membaca Hasil';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Menampilkan total barang yang muat, distribusi per sumbu (panjang × lebar × tinggi), persentase volume (%), dan sisa ruang.';
+
+  @override
+  String get helpExampleTitle => 'Contoh';
+
+  @override
+  String get helpExampleContent =>
+      'Kotak: 30 x 20 x 10 cm | Barang: 10 x 10 x 5 cm\nHasil: 3 panjang x 2 lebar x 2 tinggi = 12 barang (100% volume terpakai).';
+
+  @override
+  String get helpLimitsTitle => 'Validasi & Batasan';
+
+  @override
+  String get helpLimitsContent =>
+      'Kalkulasi geometris ortogonal saja. Tidak memperhitungkan batas berat, kerapuhan, bantalan pelindung, atau deformasi.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Data Lokal & Iklan';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Semua dimensi dihitung secara lokal di perangkat tanpa internet. Spanduk standar AdMob ditampilkan di bawah.';
 }

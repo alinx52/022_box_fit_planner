@@ -150,4 +150,52 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get assumptions =>
       'Gebruikt bruikbare binnenmaten en stijve, identieke rechthoekige voorwerpen in een eenvoudig uitgelijnd raster. Schuin draaien, samendrukken, nesten, tussenschotten, opvulling, wanddikte, belastingslimieten en gemengde maten worden niet meegenomen.';
+
+  @override
+  String get helpTooltip => 'Hulp en gids';
+
+  @override
+  String get helpTitle => 'Gids voor doospakking';
+
+  @override
+  String get helpProblemSolvedTitle => 'Opgelost probleem';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Berekent hoeveel identieke rechthoekige artikelen in een doos passen per oriëntatie en berekent het overgebleven volume.';
+
+  @override
+  String get helpHowToUseTitle => 'Gebruiksaanwijzing';
+
+  @override
+  String get helpHowToUseContent =>
+      'Voer doosafmetingen (L, B, H) en artikelafmetingen (L, B, H) in en tik op Berekenen.';
+
+  @override
+  String get helpReadingResultsTitle => 'Resultaten aflezen';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Toont totale artikelen, verdeling per as (L × B × H), volume-benuttingspercentage (%) en resterende doosruimte.';
+
+  @override
+  String get helpExampleTitle => 'Voorbeeld';
+
+  @override
+  String get helpExampleContent =>
+      'Doos: 30 x 20 x 10 cm | Artikel: 10 x 10 x 5 cm\nResultaat: 3 lengte x 2 breedte x 2 hoogte = 12 artikelen (100% volume, 0 cm rest).';
+
+  @override
+  String get helpLimitsTitle => 'Validatie & Beperkingen';
+
+  @override
+  String get helpLimitsContent =>
+      'Geometrische orthogonale pakberekening. Houdt geen rekening met gewichtslimieten, breekbaarheid of opvulmateriaal.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Lokale gegevens & Advertenties';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Alle afmetingen worden lokaal berekend zonder internetverbinding. Onderaan staat een standaard AdMob-banner.';
 }

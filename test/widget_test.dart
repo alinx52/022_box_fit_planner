@@ -121,18 +121,10 @@ void main() {
     ];
     final scrollableFinder = find.byType(Scrollable).first;
     for (final (value, message) in cases) {
-      await tester.scrollUntilVisible(
-        input,
-        -300,
-        scrollable: scrollableFinder,
-      );
+      await tester.scrollUntilVisible(input, -300, scrollable: scrollableFinder);
       await tester.enterText(input, value);
       await calculate(tester);
-      await tester.scrollUntilVisible(
-        input,
-        -300,
-        scrollable: scrollableFinder,
-      );
+      await tester.scrollUntilVisible(input, -300, scrollable: scrollableFinder);
       expect(find.text(message), findsOneWidget);
       final preservedResult = find.byKey(const ValueKey('best-orientation'));
       await tester.scrollUntilVisible(

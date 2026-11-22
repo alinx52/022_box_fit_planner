@@ -150,4 +150,52 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get assumptions =>
       'Usa le dimensioni interne utili e oggetti rettangolari rigidi identici in una semplice griglia allineata. Non considera rotazioni oblique, compressione, annidamento, divisori, imbottitura, spessore delle pareti, limiti di carico o dimensioni miste.';
+
+  @override
+  String get helpTooltip => 'Guida e aiuto';
+
+  @override
+  String get helpTitle => 'Guida alla pianificazione imballaggio scatole';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema risolto';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Determina quanti oggetti rettangolari identici possono entrare in una scatola secondo gli orientamenti e calcola il volume residuo.';
+
+  @override
+  String get helpHowToUseTitle => 'Come usare';
+
+  @override
+  String get helpHowToUseContent =>
+      'Inserisci le dimensioni della scatola esterna (L, P, A) e del singolo oggetto (L, P, A), quindi tocca Calcola imballaggio.';
+
+  @override
+  String get helpReadingResultsTitle => 'Lettura dei risultati';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Mostra il totale degli oggetti contenuti, la disposizione per asse (L × P × A), la percentuale di volume utile (%) e lo spazio residuo.';
+
+  @override
+  String get helpExampleTitle => 'Esempio';
+
+  @override
+  String get helpExampleContent =>
+      'Scatola: 30 x 20 x 10 cm | Oggetto: 10 x 10 x 5 cm\nRisultato: 3 lungh. x 2 largh. x 2 alt. = 12 oggetti (100% volume, 0 cm residui).';
+
+  @override
+  String get helpLimitsTitle => 'Validazione e limitazioni';
+
+  @override
+  String get helpLimitsContent =>
+      'Calcolo geometrico ortogonale. Non considera limiti di peso, fragilità, imbottiture protettive o deformazioni.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dati locali e annunci';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tutte le dimensioni sono elaborate sul dispositivo senza connessione internet. È mostrato un banner AdMob standard.';
 }

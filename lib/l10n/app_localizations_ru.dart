@@ -150,4 +150,52 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get assumptions =>
       'Используются полезные внутренние размеры коробки и одинаковые жёсткие прямоугольные предметы в простой выровненной сетке. Не учитываются наклонный поворот, сжатие, вложение, перегородки, прокладки, толщина стенок, предельная нагрузка и разные размеры предметов.';
+
+  @override
+  String get helpTooltip => 'Справка и руководство';
+
+  @override
+  String get helpTitle => 'Руководство по укладке в коробки';
+
+  @override
+  String get helpProblemSolvedTitle => 'Решаемая задача';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Определяет, сколько одинаковых прямоугольных предметов поместится в коробку при разных поворотах, и вычисляет свободный объем.';
+
+  @override
+  String get helpHowToUseTitle => 'Как использовать';
+
+  @override
+  String get helpHowToUseContent =>
+      'Введите внешние размеры коробки (Д, Ш, В) и размеры одного предмета (Д, Ш, В), затем нажмите «Рассчитать».';
+
+  @override
+  String get helpReadingResultsTitle => 'Чтение результатов';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Отображает общее число предметов, раскладку по осям (Д × Ш × В), процент использования объема (%) и свободное место.';
+
+  @override
+  String get helpExampleTitle => 'Пример';
+
+  @override
+  String get helpExampleContent =>
+      'Коробка: 30 x 20 x 10 см | Предмет: 10 x 10 x 5 см\nРезультат: 3 (Д) x 2 (Ш) x 2 (В) = 12 шт (100% объема, 0 см остатка).';
+
+  @override
+  String get helpLimitsTitle => 'Проверка и ограничения';
+
+  @override
+  String get helpLimitsContent =>
+      'Геометрический ортогональный расчет. Не учитывает ограничения по весу, хрупкость, амортизирующую упаковку и деформацию.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Локальные данные и реклама';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Все размеры рассчитываются локально на устройстве без интернета. Внизу экрана отображается стандартный баннер AdMob.';
 }

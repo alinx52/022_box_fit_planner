@@ -33,20 +33,76 @@
   "bestFit": "Best fit",
   "orientation": "Orientation",
   "acrossLength": "Across length: {count}",
-  "@acrossLength": {"placeholders": {"count": {"type": "int"}}},
+  "@acrossLength": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "acrossWidth": "Across width: {count}",
-  "@acrossWidth": {"placeholders": {"count": {"type": "int"}}},
+  "@acrossWidth": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "layers": "Layers: {count}",
-  "@layers": {"placeholders": {"count": {"type": "int"}}},
+  "@layers": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "totalItems": "Total items: {count}",
-  "@totalItems": {"placeholders": {"count": {"type": "int"}}},
+  "@totalItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "unusedLength": "Unused length: {value}",
-  "@unusedLength": {"placeholders": {"value": {"type": "String"}}},
+  "@unusedLength": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
   "unusedWidth": "Unused width: {value}",
-  "@unusedWidth": {"placeholders": {"value": {"type": "String"}}},
+  "@unusedWidth": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
   "unusedHeight": "Unused height: {value}",
-  "@unusedHeight": {"placeholders": {"value": {"type": "String"}}},
+  "@unusedHeight": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
   "nothingFits": "Nothing fits with the entered dimensions",
   "assumptionsTitle": "Before you pack",
-  "assumptions": "Uses usable internal box dimensions and rigid, identical rectangular items in a simple aligned grid. It does not allow angled rotation, compression, nesting, dividers, padding, wall thickness, load limits, or mixed item sizes."
+  "assumptions": "Uses usable internal box dimensions and rigid, identical rectangular items in a simple aligned grid. It does not allow angled rotation, compression, nesting, dividers, padding, wall thickness, load limits, or mixed item sizes.",
+  "helpTooltip": "Help & Guide",
+  "helpTitle": "Box Fit Planner Guide",
+  "helpProblemSolvedTitle": "Problem Solved",
+  "helpProblemSolvedContent": "Determines how many identical rectangular items fit into an outer rectangular container across orthogonal orientations and calculates leftover volume offline.",
+  "helpHowToUseTitle": "How to Use",
+  "helpHowToUseContent": "Enter outer box dimensions (length, width, height) and single item dimensions (length, width, height), then tap Calculate fit.",
+  "helpReadingResultsTitle": "Reading Results",
+  "helpReadingResultsContent": "Displays total items accommodated, items per axis (length × width × height), volume utilization percentage (%), and leftover container space.",
+  "helpExampleTitle": "Example",
+  "helpExampleContent": "Box: 30 x 20 x 10 cm | Item: 10 x 10 x 5 cm\nResult: 3 length x 2 width x 2 height = 12 items total (100% volume used, 0 cm leftover).",
+  "helpLimitsTitle": "Validation & Limitations",
+  "helpLimitsContent": "Geometric orthogonal packing calculation. Does not account for weight limits, fragility, deformation, padding, or complex mixed-orientation nesting.",
+  "helpDataAndPrivacyTitle": "Local Data & Ads",
+  "helpDataAndPrivacyContent": "All dimensions are computed strictly on-device without internet transmission. A standard AdMob banner is displayed below."
 }

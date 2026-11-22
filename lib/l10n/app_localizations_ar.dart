@@ -150,4 +150,52 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get assumptions =>
       'يستخدم الأبعاد الداخلية القابلة للاستعمال وعناصر مستطيلة صلبة ومتطابقة ضمن شبكة محاذية بسيطة. لا يشمل الدوران المائل أو الضغط أو التداخل أو الفواصل أو الحشو أو سماكة الجدار أو حدود الحمولة أو أحجام العناصر المختلفة.';
+
+  @override
+  String get helpTooltip => 'المساعدة والدليل';
+
+  @override
+  String get helpTitle => 'دليل تخطيط التعبئة في الصناديق';
+
+  @override
+  String get helpProblemSolvedTitle => 'المشكلة التي يعالجها';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'يحدد عدد العناصر المستطيلة المتطابقة التي يمكن وضعها داخل صندوق خارجي بمختلف الاتجاهات ويحسب الحجم المتبقي.';
+
+  @override
+  String get helpHowToUseTitle => 'طريقة الاستخدام';
+
+  @override
+  String get helpHowToUseContent =>
+      'أدخل أبعاد الصندوق الخارجي (الطول، العرض، الارتفاع) وأبعاد العنصر الواحد، ثم اضغط حساب السعة.';
+
+  @override
+  String get helpReadingResultsTitle => 'قراءة النتائج';
+
+  @override
+  String get helpReadingResultsContent =>
+      'يعرض إجمالي العناصر المستوعبة، والتوزيع لكل محور (الطول × العرض × الارتفاع)، ونسبة استغلال الحجم (%)، والمساحة المتبقية.';
+
+  @override
+  String get helpExampleTitle => 'مثال توضيحي';
+
+  @override
+  String get helpExampleContent =>
+      'الصندوق: 30 × 20 × 10 سم | العنصر: 10 × 10 × 5 سم\nالنتيجة: 3 طولاً × 2 عرضًا × 2 ارتفاعًا = 12 عنصرًا إجمالاً (استغلال 100% للحجم).';
+
+  @override
+  String get helpLimitsTitle => 'التحقق والقيود';
+
+  @override
+  String get helpLimitsContent =>
+      'حساب هندسي تعبوي متعامد فقط. لا يراعي حدود الوزن الأقصى أو قابلية الكسر أو حشوات التغليف الواقية.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'البيانات المحلية والإعلانات';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'تتم جميع الحسابات محليًا على الجهاز دون اتصال بالإنترنت. يظهر شريط إعلاني قياسي من AdMob أسفل الشاشة.';
 }

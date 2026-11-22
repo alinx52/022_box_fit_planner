@@ -149,6 +149,53 @@ class AppLocalizationsZh extends AppLocalizations {
   @override
   String get assumptions =>
       '使用箱子的可用内部尺寸，并假定相同的刚性长方体物品按简单对齐网格摆放。不考虑斜向旋转、压缩、套叠、隔板、填充物、壁厚、承重限制或不同尺寸的物品。';
+
+  @override
+  String get helpTooltip => '帮助与指南';
+
+  @override
+  String get helpTitle => '箱包装载规划指南';
+
+  @override
+  String get helpProblemSolvedTitle => '解决的问题';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '离线计算在长方体外箱中以不同正交旋转方向能够容纳的相同物品的最大数量、行/列/层排列及剩余空间。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent => '输入外箱尺寸（长、宽、高）和单件物品尺寸（长、宽、高），然后点击“计算装载”。';
+
+  @override
+  String get helpReadingResultsTitle => '查看结果';
+
+  @override
+  String get helpReadingResultsContent =>
+      '显示可容纳的物品总数、各轴向排列数量（长 × 宽 × 高）、体积利用率（%）以及箱内剩余空间。';
+
+  @override
+  String get helpExampleTitle => '示例';
+
+  @override
+  String get helpExampleContent =>
+      '外箱: 30 x 20 x 10 cm | 物品: 10 x 10 x 5 cm\n结果: 长3个 x 宽2个 x 高2个 = 共装载12件 (体积利用率 100%，余量 0 cm)。';
+
+  @override
+  String get helpLimitsTitle => '验证与限制';
+
+  @override
+  String get helpLimitsContent =>
+      '纯几何正交规则排布算法。不计算箱体承重极限、易碎品防震气泡膜厚度、物品挤压形变或混合异形混装。';
+
+  @override
+  String get helpDataAndPrivacyTitle => '本地数据与广告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '所有尺寸计算均在设备本地离线执行，无网络传输。屏幕底部展示标准Google AdMob横幅广告。';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hans`).
@@ -295,6 +342,53 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   @override
   String get assumptions =>
       '使用箱子的可用内部尺寸，并假定相同的刚性长方体物品按简单对齐网格摆放。不考虑斜向旋转、压缩、套叠、隔板、填充物、壁厚、承重限制或不同尺寸的物品。';
+
+  @override
+  String get helpTooltip => '帮助与指南';
+
+  @override
+  String get helpTitle => '箱包装载规划指南';
+
+  @override
+  String get helpProblemSolvedTitle => '解决的问题';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '离线计算在长方体外箱中以不同正交旋转方向能够容纳的相同物品的最大数量、行/列/层排列及剩余空间。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent => '输入外箱尺寸（长、宽、高）和单件物品尺寸（长、宽、高），然后点击“计算装载”。';
+
+  @override
+  String get helpReadingResultsTitle => '查看结果';
+
+  @override
+  String get helpReadingResultsContent =>
+      '显示可容纳的物品总数、各轴向排列数量（长 × 宽 × 高）、体积利用率（%）以及箱内剩余空间。';
+
+  @override
+  String get helpExampleTitle => '示例';
+
+  @override
+  String get helpExampleContent =>
+      '外箱: 30 x 20 x 10 cm | 物品: 10 x 10 x 5 cm\n结果: 长3个 x 宽2个 x 高2个 = 共装载12件 (体积利用率 100%，余量 0 cm)。';
+
+  @override
+  String get helpLimitsTitle => '验证与限制';
+
+  @override
+  String get helpLimitsContent =>
+      '纯几何正交规则排布算法。不计算箱体承重极限、易碎品防震气泡膜厚度、物品挤压形变或混合异形混装。';
+
+  @override
+  String get helpDataAndPrivacyTitle => '本地数据与广告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '所有尺寸计算均在设备本地离线执行，无网络传输。屏幕底部展示标准Google AdMob横幅广告。';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -441,4 +535,50 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   @override
   String get assumptions =>
       '使用箱子的可用內部尺寸，並假定相同的剛性長方體物品按簡單對齊網格擺放。不考慮斜向旋轉、壓縮、套疊、隔板、填充物、壁厚、承重限制或不同尺寸的物品。';
+
+  @override
+  String get helpTooltip => '說明與指南';
+
+  @override
+  String get helpTitle => '裝箱收納規劃指南';
+
+  @override
+  String get helpProblemSolvedTitle => '解決的問題';
+
+  @override
+  String get helpProblemSolvedContent =>
+      '離線計算在長方體外箱中以不同正交旋轉方向可容納相同物品的最大數量、行/列/層排列及剩餘空間。';
+
+  @override
+  String get helpHowToUseTitle => '使用方法';
+
+  @override
+  String get helpHowToUseContent => '輸入外箱尺寸（長、寬、高）和單件物品尺寸（長、寬、高），接著點擊「計算裝載」。';
+
+  @override
+  String get helpReadingResultsTitle => '查看結果';
+
+  @override
+  String get helpReadingResultsContent =>
+      '顯示可容納物品總數、各軸向排列數量（長 × 寬 × 高）、體積利用率（%）以及箱內剩餘空間。';
+
+  @override
+  String get helpExampleTitle => '範例';
+
+  @override
+  String get helpExampleContent =>
+      '外箱: 30 x 20 x 10 cm | 物品: 10 x 10 x 5 cm\n結果: 長3個 x 寬2個 x 高2個 = 共裝載12件 (體積利用率 100%，餘量 0 cm)。';
+
+  @override
+  String get helpLimitsTitle => '驗證與限制';
+
+  @override
+  String get helpLimitsContent => '純幾何正交排列演算法。不考慮箱體承重極限、防震緩衝包材厚度、物品受壓形變或非正交混裝。';
+
+  @override
+  String get helpDataAndPrivacyTitle => '本機資料與廣告';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      '所有尺寸計算均在裝置本機離線執行，無網路傳輸。螢幕底部顯示標準Google AdMob橫幅廣告。';
 }

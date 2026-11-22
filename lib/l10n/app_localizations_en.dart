@@ -150,4 +150,52 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get assumptions =>
       'Uses usable internal box dimensions and rigid, identical rectangular items in a simple aligned grid. It does not allow angled rotation, compression, nesting, dividers, padding, wall thickness, load limits, or mixed item sizes.';
+
+  @override
+  String get helpTooltip => 'Help & Guide';
+
+  @override
+  String get helpTitle => 'Box Fit Planner Guide';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problem Solved';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Determines how many identical rectangular items fit into an outer rectangular container across orthogonal orientations and calculates leftover volume offline.';
+
+  @override
+  String get helpHowToUseTitle => 'How to Use';
+
+  @override
+  String get helpHowToUseContent =>
+      'Enter outer box dimensions (length, width, height) and single item dimensions (length, width, height), then tap Calculate fit.';
+
+  @override
+  String get helpReadingResultsTitle => 'Reading Results';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Displays total items accommodated, items per axis (length × width × height), volume utilization percentage (%), and leftover container space.';
+
+  @override
+  String get helpExampleTitle => 'Example';
+
+  @override
+  String get helpExampleContent =>
+      'Box: 30 x 20 x 10 cm | Item: 10 x 10 x 5 cm\nResult: 3 length x 2 width x 2 height = 12 items total (100% volume used, 0 cm leftover).';
+
+  @override
+  String get helpLimitsTitle => 'Validation & Limitations';
+
+  @override
+  String get helpLimitsContent =>
+      'Geometric orthogonal packing calculation. Does not account for weight limits, fragility, deformation, padding, or complex mixed-orientation nesting.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Local Data & Ads';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'All dimensions are computed strictly on-device without internet transmission. A standard AdMob banner is displayed below.';
 }

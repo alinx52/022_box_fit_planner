@@ -150,4 +150,52 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get assumptions =>
       'Sử dụng kích thước trong lòng hộp có thể dùng và các vật phẩm hình hộp cứng giống nhau trên lưới thẳng hàng đơn giản. Không tính xoay nghiêng, nén, lồng nhau, vách ngăn, lớp đệm, độ dày thành hộp, giới hạn tải hoặc nhiều kích thước vật phẩm.';
+
+  @override
+  String get helpTooltip => 'Trợ giúp & Hướng dẫn';
+
+  @override
+  String get helpTitle => 'Hướng dẫn lập kế hoạch đóng hộp';
+
+  @override
+  String get helpProblemSolvedTitle => 'Vấn đề giải quyết';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Xác định số lượng vật phẩm hình chữ nhật giống hệt nhau vừa vặn trong hộp theo các hướng và tính thể tích còn lại.';
+
+  @override
+  String get helpHowToUseTitle => 'Cách sử dụng';
+
+  @override
+  String get helpHowToUseContent =>
+      'Nhập kích thước hộp bên ngoài (dài, rộng, cao) và kích thước vật phẩm đơn lẻ (dài, rộng, cao), sau đó nhấn Tính toán.';
+
+  @override
+  String get helpReadingResultsTitle => 'Đọc kết quả';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Hiển thị tổng số vật phẩm xếp được, phân bố theo từng trục (dài × rộng × cao), tỷ lệ sử dụng thể tích (%) và không gian thừa.';
+
+  @override
+  String get helpExampleTitle => 'Ví dụ';
+
+  @override
+  String get helpExampleContent =>
+      'Hộp: 30 x 20 x 10 cm | Vật phẩm: 10 x 10 x 5 cm\nKết quả: 3 dài x 2 rộng x 2 cao = tổng 12 vật phẩm (sử dụng 100% thể tích).';
+
+  @override
+  String get helpLimitsTitle => 'Xác thực & Giới hạn';
+
+  @override
+  String get helpLimitsContent =>
+      'Tính toán hình học đơn giản. Không tính đến giới hạn trọng lượng, độ dễ vỡ, đệm lót bảo vệ hoặc biến dạng.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dữ liệu cục bộ & Quảng cáo';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Tất cả các kích thước được tính toán cục bộ mà không cần internet. Biểu ngữ AdMob hiển thị ở dưới cùng.';
 }

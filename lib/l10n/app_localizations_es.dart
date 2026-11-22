@@ -150,4 +150,52 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get assumptions =>
       'Usa las dimensiones interiores útiles de la caja y artículos rectangulares rígidos e idénticos en una cuadrícula alineada simple. No admite giro diagonal, compresión, encaje, separadores, relleno, grosor de pared, límites de carga ni tamaños mezclados.';
+
+  @override
+  String get helpTooltip => 'Ayuda y guía';
+
+  @override
+  String get helpTitle => 'Guía del planificador de encaje en cajas';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema que resuelve';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Determina cuántos artículos rectangulares idénticos caben en una caja en diferentes orientaciones y calcula el espacio sobrante.';
+
+  @override
+  String get helpHowToUseTitle => 'Cómo usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Introduce las dimensiones de la caja exterior (largo, ancho, alto) y del artículo individual, y pulsa Calcular encaje.';
+
+  @override
+  String get helpReadingResultsTitle => 'Interpretación de resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Muestra total de artículos, distribución por eje (largo × ancho × alto), porcentaje de volumen útil (%) y espacio sobrante.';
+
+  @override
+  String get helpExampleTitle => 'Ejemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Caja: 30 x 20 x 10 cm | Artículo: 10 x 10 x 5 cm\nResultado: 3 largo x 2 ancho x 2 alto = 12 artículos (100% volumen, 0 cm sobrante).';
+
+  @override
+  String get helpLimitsTitle => 'Validaciones y límites';
+
+  @override
+  String get helpLimitsContent =>
+      'Cálculo geométrico ortogonal. No considera límites de peso, fragilidad, deformación ni material de relleno protector.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Datos locales y anuncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todas las dimensiones se calculan en el dispositivo sin conexión. Se muestra un banner estándar de AdMob en la parte inferior.';
 }

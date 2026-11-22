@@ -150,6 +150,54 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get assumptions =>
       'Usa as dimensões internas úteis da caixa e itens retangulares rígidos e idênticos em uma grade alinhada simples. Não considera rotação inclinada, compressão, encaixe interno, divisórias, acolchoamento, espessura da parede, limites de carga nem tamanhos variados.';
+
+  @override
+  String get helpTooltip => 'Ajuda e guia';
+
+  @override
+  String get helpTitle => 'Guia do Planejador de Encaixe em Caixas';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema resolvido';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Determina quantos itens retangulares idênticos cabem em uma caixa externa em diferentes orientações e calcula a sobra de espaço.';
+
+  @override
+  String get helpHowToUseTitle => 'Como usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Digite as dimensões da caixa (comprimento, largura, altura) e do item individual e toque em Calcular encaixe.';
+
+  @override
+  String get helpReadingResultsTitle => 'Leitura dos resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Mostra o total de itens, a distribuição por eixo (C × L × A), a utilização do volume (%) e o espaço livre restante.';
+
+  @override
+  String get helpExampleTitle => 'Exemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Caixa: 30 x 20 x 10 cm | Item: 10 x 10 x 5 cm\nResultado: 3 comp. x 2 larg. x 2 alt. = 12 itens (100% volume, 0 cm de sobra).';
+
+  @override
+  String get helpLimitsTitle => 'Validação e limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Cálculo geométrico ortogonal. Não considera limites de peso, fragilidade, deformações ou plástico bolha.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dados locais e anúncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todas as dimensões são calculadas no aparelho sem internet. Um banner padrão do AdMob é exibido abaixo.';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -297,4 +345,52 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String get assumptions =>
       'Usa as dimensões internas úteis da caixa e itens retangulares rígidos e idênticos em uma grade alinhada simples. Não considera rotação inclinada, compressão, encaixe interno, divisórias, acolchoamento, espessura da parede, limites de carga nem tamanhos variados.';
+
+  @override
+  String get helpTooltip => 'Ajuda e guia';
+
+  @override
+  String get helpTitle => 'Guia do Planejador de Encaixe em Caixas';
+
+  @override
+  String get helpProblemSolvedTitle => 'Problema resolvido';
+
+  @override
+  String get helpProblemSolvedContent =>
+      'Determina quantos itens retangulares idênticos cabem em uma caixa externa em diferentes orientações e calcula a sobra de espaço.';
+
+  @override
+  String get helpHowToUseTitle => 'Como usar';
+
+  @override
+  String get helpHowToUseContent =>
+      'Digite as dimensões da caixa (comprimento, largura, altura) e do item individual e toque em Calcular encaixe.';
+
+  @override
+  String get helpReadingResultsTitle => 'Leitura dos resultados';
+
+  @override
+  String get helpReadingResultsContent =>
+      'Mostra o total de itens, a distribuição por eixo (C × L × A), a utilização do volume (%) e o espaço livre restante.';
+
+  @override
+  String get helpExampleTitle => 'Exemplo';
+
+  @override
+  String get helpExampleContent =>
+      'Caixa: 30 x 20 x 10 cm | Item: 10 x 10 x 5 cm\nResultado: 3 comp. x 2 larg. x 2 alt. = 12 itens (100% volume, 0 cm de sobra).';
+
+  @override
+  String get helpLimitsTitle => 'Validação e limites';
+
+  @override
+  String get helpLimitsContent =>
+      'Cálculo geométrico ortogonal. Não considera limites de peso, fragilidade, deformações ou plástico bolha.';
+
+  @override
+  String get helpDataAndPrivacyTitle => 'Dados locais e anúncios';
+
+  @override
+  String get helpDataAndPrivacyContent =>
+      'Todas as dimensões são calculadas no aparelho sem internet. Um banner padrão do AdMob é exibido abaixo.';
 }
